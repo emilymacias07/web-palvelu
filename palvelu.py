@@ -11,7 +11,7 @@ def app(environ, respond):
     yield "Hello w€rld😞!".encode('utf-8')
     polku = environ["PATH_INFO"]
     yield "<p>mokka</p>".encode('utf-8')
-    salanimi = polku.replace("a", "aca").replace("i","hani")
+    salanimi = polku.replace("a", "aca").replace("i","hani").replace("n", "nono")
     yield(f"Salainen nimesi on: <b>{salanimi}</b>".encode('utf-8'))
    # for key in environ: 
        # yield("%s: %s\n" % (key, environ[key])).encode('utf-8')
